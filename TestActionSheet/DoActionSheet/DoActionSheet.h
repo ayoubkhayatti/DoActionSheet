@@ -78,6 +78,8 @@
 
 #define DO_AS_CANCEL_TAG           -100
 
+#define DO_AS_TITLE_HEIGHT         30
+
 typedef NS_ENUM(int, DoAlertViewTransitionStyle) {
     DoASTransitionStyleNormal = 0,
     DoASTransitionStyleFade,

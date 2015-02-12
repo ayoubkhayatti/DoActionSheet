@@ -187,18 +187,18 @@
                                                                      _vActionSheet.frame.size.width - (self.doTitleInset.left + self.doTitleInset.right) , 0)];
         lbTitle.text = _strTitle;
         [self setLabelAttributes:lbTitle];
-        lbTitle.frame = CGRectMake(self.doTitleInset.left, self.doTitleInset.top, lbTitle.frame.size.width, [self getTextHeight:lbTitle]);
+        lbTitle.frame = CGRectMake(self.doTitleInset.left, self.doTitleInset.top, lbTitle.frame.size.width, [self getTextHeight:lbTitle]+DO_AS_TITLE_HEIGHT);
         lbTitle.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [_vActionSheet addSubview:lbTitle];
         
         dHeight = lbTitle.frame.size.height + self.doTitleInset.bottom;
         
         // underline
-        UIView *vLine = [[UIView alloc] initWithFrame:CGRectMake(lbTitle.frame.origin.x, lbTitle.frame.origin.y + lbTitle.frame.size.height - 3, lbTitle.frame.size.width, 0.5)];
-        vLine.backgroundColor = (self.doTitleTextColor == nil) ? DO_AS_TITLE_TEXT_COLOR : self.doTitleTextColor;
-        vLine.alpha = 0.2;
-        vLine.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        [_vActionSheet addSubview:vLine];
+        //UIView *vLine = [[UIView alloc] initWithFrame:CGRectMake(lbTitle.frame.origin.x, lbTitle.frame.origin.y + lbTitle.frame.size.height - 3, lbTitle.frame.size.width, 0.5)];
+        //vLine.backgroundColor = (self.doTitleTextColor == nil) ? DO_AS_TITLE_TEXT_COLOR : self.doTitleTextColor;
+        //vLine.alpha = 0.2;
+        //vLine.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        //[_vActionSheet addSubview:vLine];
     }
     else
         dHeight += self.doTitleInset.bottom;
