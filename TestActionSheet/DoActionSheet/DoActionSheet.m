@@ -295,7 +295,7 @@
 
 - (void)buttonTarget:(id)sender
 {
-    _result([sender tag]);
+    _result((int)[sender tag]);
     [self hideAnimation];
 }
 

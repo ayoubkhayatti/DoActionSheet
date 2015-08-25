@@ -27,7 +27,7 @@
 - (IBAction)onShowAlert:(id)sender
 {
     DoActionSheet *vActionSheet = [[DoActionSheet alloc] init];
-    vActionSheet.nAnimationType = _sgType.selectedSegmentIndex;
+    vActionSheet.nAnimationType = (int)_sgType.selectedSegmentIndex;
     
     if (_sgStyle.selectedSegmentIndex == 0)
         [vActionSheet setStyle1];
